@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "timesyncservers",
+  "version": "${version}",
+  "name": "timeSyncServers",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Madalin/timeSyncServers"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/timesyncservers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "future.coman.madalin.timesyncservers.client.TimeSyncServersClient"
+    ],
+    "main": [
+      "future.coman.madalin.timesyncservers.TimeSyncServers"
+    ]
+  },
+  "mixins": [
+    "timesyncservers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
